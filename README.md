@@ -32,5 +32,4 @@ pip install -r requirements.txt
 
 Run the following command to start training the model:
 
-```bash
 python main.py
