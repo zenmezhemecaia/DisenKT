@@ -27,3 +27,10 @@ DisenKT is a novel framework for cross-domain knowledge tracing that:
 git clone https://github.com/zenmezhemecaia/DisenKT.git
 cd DisenKT
 pip install -r requirements.txt
+
+## Usage
+
+Run the following command to start training the model:
+
+```bash
+python main.py
