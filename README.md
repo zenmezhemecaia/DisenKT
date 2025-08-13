@@ -15,14 +15,15 @@ DisenKT is a novel framework for cross-domain knowledge tracing that:
 
 ## Key Features
 
-- 🧠 **Disentangled Representation Learning**: Separates transferable knowledge from domain-specific patterns
-- ⏳ **Temporal Modeling**: Combines VAE with hierarchical attention for effective sequence modeling
-- 🔄 **Cross-Domain Transfer**: Supports knowledge transfer across multiple educational domains
-- 📊 **Interpretable Results**: Provides visualizations of knowledge state evolution
+- **Disentangled Knowledge Tracing**: Improves cross-domain KT accuracy and interpretability via explicit disentanglement of domain-shared and domain-exclusive knowledge components
+- **Variational Attention Autoencoder (VAAE)**: Novel architecture that fuses hierarchical attention mechanisms with variational autoencoders for enhanced sequence modeling
+- **Negative Transfer Reduction**: Advanced mutual information minimization technique enables precise knowledge transfer while reducing harmful negative transfer
+- **Consistent Performance Gains**: Outperforms existing approaches across multiple CDKT scenarios, with average improvements of 3.09% AUC in course-level tasks
+- **Multi-Domain Support**: Flexible framework designed for complex educational settings with multiple source and target domains
 
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/DisenKT.git
+git clone https://github.com/zenmezhemecaia/DisenKT.git
 cd DisenKT
 pip install -r requirements.txt
