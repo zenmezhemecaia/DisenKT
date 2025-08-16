@@ -99,10 +99,7 @@ class ModelTrainer(Trainer):
         auc = compute_auc(flattened_truths, flattened_preds)
         rmse = mean_squared_error(flattened_truths, flattened_preds, squared=False)
 
-        z_s_np = z_s[ground_mask.bool()].detach().cpu().numpy()
-        z_e_np = z_e[ground_mask.bool()].detach().cpu().numpy()
-
-        return preds, accuracy, auc, rmse, z_s_np, z_e_np
+        return preds, accuracy, auc, rmse
 
     def disenKT_loss_fn(self, seqs, aug_seqs, result, result_exclusive, mu_s, logvar_s,
                         mu_e, logvar_e, ground, z_s, z_g, z_e, neg_z_s,
