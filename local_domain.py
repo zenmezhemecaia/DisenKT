@@ -90,7 +90,7 @@ class LocalDomain:
         total_batches = 0
 
         for _, problems in tqdm(dataloader):
-            preds, acc, auc, rmse, z_s_np, z_e_np = self.trainer.test_batch(problems)
+            preds, acc, auc, rmse = self.trainer.test_batch(problems)
             total_acc += acc
             total_rmse += rmse
             total_auc += auc
